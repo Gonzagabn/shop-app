@@ -140,7 +140,7 @@ class _AuthCardState extends State<AuthCard>
       ),
       child: AnimatedContainer(
         duration: Duration(milliseconds: 300),
-        curve: Curves.easeIn,
+        curve: Curves.linear,
         // height: _heigthAnimation!.value.height,
         height: _authMode == AuthMode.Login ? 290 : 371,
         width: deviceSize.width * 0.75,
@@ -174,8 +174,8 @@ class _AuthCardState extends State<AuthCard>
               ),
               AnimatedContainer(
                 constraints: BoxConstraints(
-                  minHeight: _authMode == AuthMode.Signup ? 60 : 0,
-                  maxHeight: _authMode == AuthMode.Signup ? 120 : 0,
+                  minHeight: _authMode == AuthMode.Signup ? 0 : 0,
+                  maxHeight: _authMode == AuthMode.Signup ? 81 : 0,
                 ),
                 duration: Duration(milliseconds: 300),
                 curve: Curves.linear,
@@ -191,7 +191,7 @@ class _AuthCardState extends State<AuthCard>
                               if (value != _passwordController.text) {
                                 return 'Senhas diferentes!';
                               }
-                              return null;
+                              return '';
                             }
                           : null,
                     ),
