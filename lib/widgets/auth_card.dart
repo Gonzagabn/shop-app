@@ -150,7 +150,10 @@ class _AuthCardState extends State<AuthCard>
           child: Column(
             children: <Widget>[
               TextFormField(
-                decoration: InputDecoration(labelText: 'E-mail'),
+                decoration: InputDecoration(
+                  labelText: 'E-mail',
+                  helperText: '',
+                ),
                 keyboardType: TextInputType.emailAddress,
                 validator: (value) {
                   if (value!.isEmpty || !value.contains('@')) {
@@ -161,7 +164,9 @@ class _AuthCardState extends State<AuthCard>
                 onSaved: (value) => _authData['email'] = value!,
               ),
               TextFormField(
-                decoration: InputDecoration(labelText: 'Senha'),
+                decoration: InputDecoration(
+                  labelText: 'Senha',
+                ),
                 controller: _passwordController,
                 obscureText: true,
                 validator: (value) {
@@ -184,14 +189,15 @@ class _AuthCardState extends State<AuthCard>
                   child: SlideTransition(
                     position: _slideAnimation!,
                     child: TextFormField(
-                      decoration: InputDecoration(labelText: 'Confirmar Senha'),
+                      decoration: InputDecoration(
+                        labelText: 'Confirmar Senha',
+                      ),
                       obscureText: true,
                       validator: _authMode == AuthMode.Signup
                           ? (value) {
                               if (value != _passwordController.text) {
                                 return 'Senhas diferentes!';
                               }
-                              return '';
                             }
                           : null,
                     ),
