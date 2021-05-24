@@ -152,7 +152,6 @@ class _AuthCardState extends State<AuthCard>
               TextFormField(
                 decoration: InputDecoration(
                   labelText: 'E-mail',
-                  helperText: '',
                 ),
                 keyboardType: TextInputType.emailAddress,
                 validator: (value) {
