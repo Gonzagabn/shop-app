@@ -7,6 +7,8 @@ Aplicativo de loja, com autenticação de usuário, onde é possível visualizar
 
 Projetado para fins de estudo pela Cod3r - https://www.udemy.com/course/curso-flutter/
 
+![img](https://i.imgur.com/D7iV7Tw.jpg)
+
 ## Funções Implementadas e Aprendizados: 
 
 - Inherited Widget;
