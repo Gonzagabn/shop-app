@@ -1,10 +1,9 @@
 class Constants {
-  static const BASE_API_URL =
-      'https://flutter-2ce78-default-rtdb.firebaseio.com';
+  static const BASE_API_URL = 'URL DB';
   static const AUTH_SIGNUP_API_URL =
-      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDfTFhQTdUr5SjJHJlnjk3VdysJnF0pZ1o';
+      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=API_KEY';
   static const AUTH_LOGIN_API_URL =
-      'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDfTFhQTdUr5SjJHJlnjk3VdysJnF0pZ1o';
+      'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=API_KEY';
 }
 
 //Para funcionar local por exemplo:
